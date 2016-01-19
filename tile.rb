@@ -31,6 +31,10 @@ class Tile
     @bombed = true
   end
 
+  def toggle_flag
+    @flagged = !@flagged
+  end
+
   def reveal
     # Reveal tile and return string
     # Ignore if flagged or already revealed
